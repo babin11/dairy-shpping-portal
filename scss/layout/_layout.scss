@@ -1,0 +1,22 @@
+.wrapper {
+	height: 75vh;
+	// position: relative;
+	background-image: linear-gradient(
+		var(--color-primary-hard),
+		var(--color-primary-soft)
+	);
+}
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+	// background-color: var(--grey-dark-1);
+	min-height: 100rem;
+}
+.header {
+	// position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// background-color: var(--grey-light-2);
+	height: 6rem;
+}

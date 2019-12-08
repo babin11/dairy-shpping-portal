@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%; // 10px
+	box-sizing: border-box;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: var(--color-background-light);
+	letter-spacing: 1.5px;
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+	line-height: 1.6;
+}
