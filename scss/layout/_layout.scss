@@ -2,15 +2,19 @@
 	height: 75vh;
 	// position: relative;
 	background-image: linear-gradient(
-		var(--color-primary-hard),
-		var(--color-primary-soft)
+		to right bottom,
+		var(--color-secondary-light),
+		var(--color-secondary-dark)
 	);
 }
-.container {
+.main-container {
 	max-width: 120rem;
 	margin: 0 auto;
-	// background-color: var(--grey-dark-1);
-	min-height: 100rem;
+	min-height: 100vh;
+}
+.heading-container {
+	min-height: 75vh;
+	position: relative;
 }
 .header {
 	// position: absolute;

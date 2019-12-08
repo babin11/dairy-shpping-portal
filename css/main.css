@@ -4,9 +4,8 @@
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
-  --color-primary-soft: #ff336600;
-  --color-primary-mid: #ff336613;
-  --color-primary-hard: #ba265c42;
+  --color-secondary-light: #cbf0ff;
+  --color-secondary-dark: #b1e8fc;
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
@@ -46,7 +45,6 @@ body {
 
 .logo {
   margin-left: 1rem;
-  padding: 3rem 0 3rem 1.5rem;
   cursor: pointer;
 }
 
@@ -76,8 +74,7 @@ body {
 
 .nav__links {
   text-decoration: none;
-  color: var(--grey-dark-2);
-  color: #fff;
+  color: var(--grey-dark-1);
 }
 
 .nav__links:hover {
@@ -99,16 +96,35 @@ body {
   border-bottom: 0px;
 }
 
-.wrapper {
-  height: 75vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-primary-hard)), to(var(--color-primary-soft)));
-  background-image: linear-gradient(var(--color-primary-hard), var(--color-primary-soft));
+.heading-primary {
+  display: block;
+  position: absolute;
+  max-width: 44%;
+  top: 42%;
+  left: 5rem;
 }
 
-.container {
+.heading-primary--main {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.wrapper {
+  height: 75vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-secondary-light)), to(var(--color-secondary-dark)));
+  background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark));
+}
+
+.main-container {
   max-width: 120rem;
   margin: 0 auto;
-  min-height: 100rem;
+  min-height: 100vh;
+}
+
+.heading-container {
+  min-height: 75vh;
+  position: relative;
 }
 
 .header {

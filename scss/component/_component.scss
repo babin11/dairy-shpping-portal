@@ -1,6 +1,6 @@
 .logo {
 	margin-left: 1rem;
-	padding: 3rem 0 3rem 1.5rem;
+	// padding: 3rem 0 3rem 1.5rem;
 	cursor: pointer;
 }
 
@@ -21,8 +21,8 @@
 	}
 	&__links {
 		text-decoration: none;
-		color: var(--grey-dark-2);
-		color: #fff;
+		color: var(--grey-dark-1);
+		// color: #fff;
 		&:hover {
 			font-weight: 600;
 			border-bottom: 0.3rem var(--color-primary-dark) solid;
@@ -38,7 +38,21 @@
 			background-color: var(--color-primary-dark);
 			color: #fff;
 			border-bottom: 0px;
-			// padding: 0.75rem 0.5rem;
 		}
+	}
+}
+
+.heading-primary {
+	display: block;
+	position: absolute;
+	max-width: 44%;
+	top: 42%;
+	left: 5rem;
+	&--main {
+		font-size: 6rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+	&--sub {
 	}
 }
