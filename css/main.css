@@ -5,7 +5,8 @@
   --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
   --color-secondary-light: #cbf0ff;
-  --color-secondary-dark: #b1e8fc;
+  --color-secondary-mid: #b0e9ff;
+  --color-secondary-dark: #94e1fd;
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
@@ -16,7 +17,8 @@
   --grey-dark-1: #333;
   --grey-dark-2: #777;
   --grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-dark: 0 5px 1rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 1px 1rem rgba(0, 0, 0, 0.3);
 }
 
 *,
@@ -24,14 +26,12 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -41,6 +41,14 @@ body {
   min-height: 100vh;
   position: relative;
   line-height: 1.6;
+}
+
+.u-mgn-tp-sm {
+  margin-top: 1.75rem;
+}
+
+.u-mgn-tp-mid {
+  margin-top: 3rem;
 }
 
 .logo {
@@ -54,22 +62,31 @@ body {
 }
 
 .nav--list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex: 0 0 30%;
+  justify-content: space-between;
   font-weight: 600;
   font-size: 1.5rem;
+  transition: all 0.1s ease;
 }
 
 .nav--list-items {
   list-style: none;
   cursor: pointer;
+}
+
+.nav--list-items:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.nav--list-items:hover .nav__links {
+  border-bottom: 0.3rem var(--color-primary-dark) solid;
+}
+
+.nav--list-items:active {
+  -webkit-transform: translateY(-1.5px);
+          transform: translateY(-1.5px);
 }
 
 .nav__links {
@@ -79,41 +96,69 @@ body {
 
 .nav__links:hover {
   font-weight: 600;
-  border-bottom: 0.3rem var(--color-primary-dark) solid;
+  color: var(--grey-dark-1);
 }
 
 .nav--4 {
   padding: 0.75rem 0.75rem;
-  border: 0.1rem var(--grey-light-4) solid;
-  -webkit-transition: all 0.25s cubic-bezier(1, 0, 0, 1);
-  transition: all 0.25s cubic-bezier(1, 0, 0, 1);
+  border: 0.1rem var(--grey-dark-2) solid;
+  transition: all 0.25s ease;
   border-radius: 0.5rem;
 }
 
 .nav--4:hover {
   background-color: var(--color-primary-dark);
   color: #fff;
-  border-bottom: 0px;
+  border-bottom: -0.3rem;
+  box-shadow: var(--shadow-dark);
+}
+
+.nav--4:active {
+  box-shadow: var(--shadow-light);
 }
 
 .heading-primary {
   display: block;
   position: absolute;
   max-width: 44%;
-  top: 42%;
-  left: 5rem;
+  top: 30%;
+  left: 1rem;
 }
 
 .heading-primary--main {
   font-size: 6rem;
   font-weight: 700;
-  line-height: 1;
+}
+
+.btn-main {
+  padding: 1.25rem 4.5rem;
+  border: none;
+  background-color: var(--color-primary-dark);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: inherit;
+  border-radius: 0.75rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.btn-main:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  box-shadow: var(--shadow-dark);
+}
+
+.btn-main:active {
+  -webkit-transform: translateY(-1.5px);
+          transform: translateY(-1.5px);
+  box-shadow: var(--shadow-light);
 }
 
 .wrapper {
   height: 75vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-secondary-light)), to(var(--color-secondary-dark)));
-  background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark));
+  background-image: linear-gradient(to bottom right, var(--color-secondary-mid), var(--color-secondary-light), var(--color-secondary-mid), var(--color-secondary-light), var(--color-secondary-dark));
 }
 
 .main-container {
@@ -128,14 +173,8 @@ body {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 6rem;
 }

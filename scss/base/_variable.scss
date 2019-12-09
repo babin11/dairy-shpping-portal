@@ -1,8 +1,4 @@
 :root {
-	// --color-primary-light: ;
-	// --color-primary-dark: ;
-	// --color-primary-darker: ;
-
 	--color-background-light: #fff;
 
 	--color-grey-light: #f7f7f7;
@@ -11,7 +7,8 @@
 	--color-primary-dark: #ba265d;
 
 	--color-secondary-light: #cbf0ff;
-	--color-secondary-dark: #b1e8fc;
+	--color-secondary-mid: #b0e9ff;
+	--color-secondary-dark: #94e1fd;
 
 	--color-primary: #eb2f64;
 	--color-primary-light: #ff3366;
@@ -26,7 +23,8 @@
 	--grey-dark-2: #777;
 	--grey-dark-3: #999;
 
-	--shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+	--shadow-dark: 0 5px 1rem rgba(0, 0, 0, 0.3);
+	--shadow-light: 0 1px 1rem rgba(0, 0, 0, 0.3);
 }
 
 // xs (for phones - screens less than 768px wide)
