@@ -148,6 +148,7 @@ body {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   box-shadow: var(--shadow-dark);
+  cursor: pointer;
 }
 
 .btn-main:active {
@@ -156,9 +157,35 @@ body {
   box-shadow: var(--shadow-light);
 }
 
+.form-box {
+  display: flex;
+  height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: linen;
+  width: 50%;
+}
+
+.login-form__email {
+  width: 50%;
+  height: 5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  text-align: center;
+  border: none;
+  border-radius: 1.5rem;
+  outline: none;
+}
+
 .wrapper {
   height: 75vh;
-  background-image: linear-gradient(to bottom right, var(--color-secondary-mid), var(--color-secondary-light), var(--color-secondary-mid), var(--color-secondary-light), var(--color-secondary-dark));
+  background-color: linen;
 }
 
 .main-container {

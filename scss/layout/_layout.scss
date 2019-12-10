@@ -1,16 +1,19 @@
 .wrapper {
 	height: 75vh;
 	// position: relative;
-	background-image: linear-gradient(
-		to bottom right,
-		var(--color-secondary-mid),
-		var(--color-secondary-light),
-		var(--color-secondary-mid),
-		var(--color-secondary-light),
-		var(--color-secondary-dark)
-	);
+	background-color: linen;
+	// background-image: linear-gradient(
+	// 	to bottom right,
+	// 	var(--color-secondary-mid),
+	// 	var(--color-secondary-light),
+	// 	var(--color-secondary-mid),
+	// 	var(--color-secondary-light),
+	// 	var(--color-secondary-dark)
+	// );
 }
 .main-container {
+	// background-color: var(--grey-light-2);
+
 	max-width: 120rem;
 	margin: 0 auto;
 	min-height: 100vh;

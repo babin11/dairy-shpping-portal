@@ -86,9 +86,35 @@
 	&:hover {
 		transform: translateY(-3px);
 		box-shadow: var(--shadow-dark);
+		cursor: pointer;
 	}
 	&:active {
 		transform: translateY(-1.5px);
 		box-shadow: var(--shadow-light);
+	}
+}
+.form-box {
+	display: flex;
+	height: 100vh;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: linen;
+
+	width: 50%;
+	&__email {
+		width: 50%;
+		height: 5rem;
+		padding: 1rem;
+		font-size: 1.5rem;
+		font-family: inherit;
+		text-align: center;
+		border: none;
+		border-radius: 1.5rem;
+		outline: none;
 	}
 }
