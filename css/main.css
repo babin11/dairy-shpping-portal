@@ -67,7 +67,7 @@ body {
   justify-content: space-between;
   font-weight: 600;
   font-size: 1.5rem;
-  transition: all 0.1s ease;
+  transition: all 0.25s ease;
 }
 
 .nav--list-items {
@@ -80,7 +80,7 @@ body {
           transform: translateY(-3px);
 }
 
-.nav--list-items:hover .nav__links {
+.nav--list-items:hover .nav__links :not(:last-child) {
   border-bottom: 0.3rem var(--color-primary-dark) solid;
 }
 
@@ -102,14 +102,14 @@ body {
 .nav--4 {
   padding: 0.75rem 0.75rem;
   border: 0.1rem var(--grey-dark-2) solid;
-  transition: all 0.25s ease;
   border-radius: 0.5rem;
+  background-color: var(--color-primary-dark);
+  color: #fff;
+  transition: all 0.25s ease;
 }
 
 .nav--4:hover {
-  background-color: var(--color-primary-dark);
   color: #fff;
-  border-bottom: -0.3rem;
   box-shadow: var(--shadow-dark);
 }
 
@@ -167,7 +167,7 @@ body {
   min-height: 100vh;
 }
 
-.heading-container {
+.section-heading {
   min-height: 75vh;
   position: relative;
 }

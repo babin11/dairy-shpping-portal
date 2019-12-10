@@ -14,14 +14,14 @@
 		justify-content: space-between;
 		font-weight: 600;
 		font-size: 1.5rem;
-		transition: all 0.1s ease;
+		transition: all 0.25s ease;
 		&-items {
 			list-style: none;
 			cursor: pointer;
 			&:hover {
 				transform: translateY(-3px);
 			}
-			&:hover .nav__links {
+			&:hover .nav__links :not(:last-child) {
 				border-bottom: 0.3rem var(--color-primary-dark) solid;
 			}
 			&:active {
@@ -40,13 +40,14 @@
 	&--4 {
 		padding: 0.75rem 0.75rem;
 		border: 0.1rem var(--grey-dark-2) solid;
-		transition: all 0.25s ease;
-		border-radius: 0.5rem;
 
+		border-radius: 0.5rem;
+		background-color: var(--color-primary-dark);
+		color: #fff;
+		transition: all 0.25s ease;
 		&:hover {
-			background-color: var(--color-primary-dark);
+			// border-bottom: -0.3rem;
 			color: #fff;
-			border-bottom: -0.3rem;
 			box-shadow: var(--shadow-dark);
 		}
 		&:active {
