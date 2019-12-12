@@ -189,6 +189,13 @@ body {
   border-radius: 0.5rem;
 }
 
+.card {
+  background-color: yellow;
+  text-align: center;
+  height: 15rem;
+  min-width: 15rem;
+}
+
 .wrapper {
   height: 75vh;
 }
@@ -207,6 +214,9 @@ body {
 
 .section-features {
   min-height: 23.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 0 0 30%;
 }
 
 .header {

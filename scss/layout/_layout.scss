@@ -26,6 +26,9 @@
 }
 .section-features {
 	min-height: 23.5rem;
+	display: flex;
+	justify-content: space-evenly;
+	flex: 0 0 30%;
 }
 .header {
 	// position: absolute;
