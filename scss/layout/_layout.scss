@@ -1,7 +1,7 @@
 .wrapper {
 	height: 75vh;
 	// position: relative;
-	background-color: linen;
+	// background-color: linen;
 	// background-image: linear-gradient(
 	// 	to bottom right,
 	// 	var(--color-secondary-mid),
@@ -12,15 +12,20 @@
 	// );
 }
 .main-container {
-	// background-color: var(--grey-light-2);
+	// background-color: var(--grey-light-1);
 
 	max-width: 120rem;
 	margin: 0 auto;
 	min-height: 100vh;
+
+	position: relative;
 }
 .section-heading {
 	min-height: 75vh;
 	position: relative;
+}
+.section-features {
+	min-height: 23.5rem;
 }
 .header {
 	// position: absolute;

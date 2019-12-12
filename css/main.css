@@ -100,8 +100,9 @@ body {
 }
 
 .nav--4 {
-  padding: 0.75rem 0.75rem;
+  padding: 0.75rem 1rem;
   border: 0.1rem var(--grey-dark-2) solid;
+  font-weight: 600;
   border-radius: 0.5rem;
   background-color: var(--color-primary-dark);
   color: #fff;
@@ -157,46 +158,55 @@ body {
   box-shadow: var(--shadow-light);
 }
 
-.form-box {
+.form-container {
+  max-width: 40%;
+  height: 93.5vh;
   display: flex;
-  height: 100vh;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background-color: linen;
-  width: 50%;
+  position: absolute;
+  top: 0%;
 }
 
-.login-form__email {
-  width: 50%;
-  height: 5rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-family: inherit;
+.form {
+  background-color: var(--grey-light-1);
   text-align: center;
-  border: none;
-  border-radius: 1.5rem;
+  padding: 20rem 0rem;
+  border-radius: 15px;
+}
+
+.input {
+  width: 100%;
+}
+
+.input__name, .input__password {
+  width: 80%;
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--grey-light-4);
   outline: none;
+  font-size: 2rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
 }
 
 .wrapper {
   height: 75vh;
-  background-color: linen;
 }
 
 .main-container {
   max-width: 120rem;
   margin: 0 auto;
   min-height: 100vh;
+  position: relative;
 }
 
 .section-heading {
   min-height: 75vh;
   position: relative;
+}
+
+.section-features {
+  min-height: 23.5rem;
 }
 
 .header {
