@@ -189,6 +189,12 @@ body {
   border-radius: 0.5rem;
 }
 
+.icon {
+  height: 1.4rem;
+  width: 1.4rem;
+  fill: var(--color-primary-dark);
+}
+
 .card {
   background-color: yellow;
   text-align: center;
