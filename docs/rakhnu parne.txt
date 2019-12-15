@@ -1,0 +1,3 @@
+features :
+1) wedding,festivals,birthdays etc
+2) monthly subscription
