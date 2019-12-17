@@ -5,7 +5,7 @@
 }
 
 .nav {
-	width: 400px;
+	width: 410px;
 	margin-right: 1rem;
 
 	&--list {
@@ -65,14 +65,14 @@
 	}
 }
 
-.heading-primary {
+.heading__primary {
 	display: block;
-	position: absolute;
+	// position: absolute;
 	max-width: 44%;
 	// top: 30%;
+	// // left: 1rem;
+	// top: 18%;
 	// left: 1rem;
-	top: 18%;
-	left: 1rem;
 	&--main {
 		font-size: 6rem;
 		font-weight: 700;
@@ -141,21 +141,23 @@
 .card {
 	// background-color: yellow;
 	text-align: center;
-	height: 25rem;
+	height: 15rem;
 	// padding: 3rem;
-	min-width: 15rem;
+	//min-width: 15rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex: 0 1 20%;
+	margin-top: 5rem;
+	// padding: 5rem 0 5rem 0;
 	// & img {
 	// 	height: 25rem;
 	// 	width: 20rem;
 	// }
 	&__icon {
-		height: 5rem;
-		width: 10rem;
+		height: 100%;
+		width: 100%;
 		display: flex;
 		fill: var(--color-primary-dark);
 	}
