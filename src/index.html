@@ -10,6 +10,8 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="../css/main.min.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/script.js"></script>
 		<title>Document</title>
 	</head>
 	<body>
@@ -22,7 +24,7 @@
 				<nav class="nav">
 					<ul class="nav--list">
 						<li class="nav--list-items">
-							<a href="index.html" class="nav__links">
+							<a href="main" class="nav__links">
 								<svg class="nav__icon">
 									<use
 										xlink:href="../img/sprite.svg#icon-home"
@@ -32,7 +34,7 @@
 							</a>
 						</li>
 						<li class="nav--list-items">
-							<a href="index.html" class="nav__links">
+							<a href="products" class="nav__links">
 								<svg class="nav__icon">
 									<use
 										xlink:href="../img/sprite.svg#icon-shopping-bag"
@@ -42,7 +44,7 @@
 							</a>
 						</li>
 						<li class="nav--list-items">
-							<a href="index.html" class="nav__links">
+							<a href="supports" class="nav__links">
 								<svg class="nav__icon">
 									<use
 										xlink:href="../img/sprite.svg#icon-phone"
@@ -59,76 +61,12 @@
 					</ul>
 				</nav>
 			</section>
+
 			<!-- End of section nav -->
 
 			<!-- Main Content -->
-			<main class="main-container">
-				<div class="heading-container">
-					<header class="heading-primary">
-						<h1 class="heading-primary--main">
-							Lorem ipsum sit dolor sit.
-						</h1>
-						<h3 class="heading-primary--sub">
-							"Take a taste. Come join us. Life is so endlessly
-							delicious.”
-						</h3>
-						<button class="btn-main u-mgn-tp-sm">Order Now</button>
-					</header>
-				</div>
-
-				<section class="section-features">
-					<div class="card">
-						<object
-							class="card__icon"
-							type="image/svg+xml"
-							data="../img/pricing.svg"
-						>
-						</object>
-						<span class="card__caption">Pricing</span>
-					</div>
-					<div class="card">
-						<object
-							class="card__icon"
-							type="image/svg+xml"
-							data="../img/shipped.svg"
-						>
-						</object>
-						<span class="card__caption">Pricing</span>
-					</div>
-					<div class="card">
-						<object
-							class="card__icon"
-							type="image/svg+xml"
-							data="../img/offer.svg"
-						>
-						</object>
-						<span class="card__caption">Pricing</span>
-					</div>
-					<div class="card">
-						<object
-							class="card__icon"
-							type="image/svg+xml"
-							data="../img/offer.svg"
-						>
-						</object>
-						<span class="card__caption">Pricing</span>
-					</div>
-					<!-- <div class="card"></div> -->
-					<!-- <h1 class="heading-primary--main">Features</h1> -->
-					<!-- <div class="card">
-						<object
-							class="card__icon"
-							type="image/svg+xml"
-							data="../img/undraw_on_the_way_ldaq.svg"
-						>
-							Your browser does not support SVG
-						</object>
-						<div class="card__caption">
-							Free Delivery over Bhaktpaur
-						</div>
-					</div> -->
-				</section>
-			</main>
+			<!-- Contents are loaded using jquery -->
+			<main class="main-container" id="content"></main>
 			<!-- End of main container -->
 		</div>
 	</body>
