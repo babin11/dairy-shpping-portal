@@ -5,7 +5,6 @@ $(document).ready(function() {
 
 	//handle menu click
 	$(".nav__links").click(function() {
-		//console.log("working");
 		var page = $(this).attr("href");
 		$("#content").load("../src/" + page + ".html");
 		//prevent default href action in links

@@ -61,7 +61,7 @@ body {
   margin-right: 1rem;
 }
 
-.nav--list {
+.nav__list {
   display: flex;
   flex: 0 0 30%;
   justify-content: space-between;
@@ -70,22 +70,22 @@ body {
   transition: all 0.25s ease;
 }
 
-.nav--list-items {
+.nav__list-items {
   list-style: none;
   cursor: pointer;
 }
 
-.nav--list-items:hover {
+.nav__list-items:hover {
   transition: all 0.25s ease;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
 
-.nav--list-items:hover .nav__links :not(:last-child) {
+.nav__list-items:hover .nav__links :not(:last-child) {
   border-bottom: 0.3rem var(--color-primary-dark) solid;
 }
 
-.nav--list-items:active {
+.nav__list-items:active {
   -webkit-transform: translateY(-1.5px);
           transform: translateY(-1.5px);
 }
@@ -176,27 +176,6 @@ body {
   top: 0%;
 }
 
-.form {
-  background-color: var(--grey-light-1);
-  text-align: center;
-  padding: 20rem 0rem;
-  border-radius: 15px;
-}
-
-.input {
-  width: 100%;
-}
-
-.input__name, .input__password {
-  width: 80%;
-  padding: 1.5rem 2rem;
-  border: 1px solid var(--grey-light-4);
-  outline: none;
-  font-size: 2rem;
-  font-family: inherit;
-  border-radius: 0.5rem;
-}
-
 .card {
   text-align: center;
   height: 15rem;
@@ -219,6 +198,27 @@ body {
   margin-top: 2rem;
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+.form {
+  background-color: var(--grey-light-1);
+  text-align: center;
+  padding: 20rem 0rem;
+  border-radius: 15px;
+}
+
+.input {
+  width: 100%;
+}
+
+.input__name, .input__password {
+  width: 80%;
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--grey-light-4);
+  outline: none;
+  font-size: 2rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
 }
 
 .wrapper {

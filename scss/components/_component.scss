@@ -1,3 +1,4 @@
+//Style for index.html
 .logo {
 	margin-left: 1rem;
 	// padding: 3rem 0 3rem 1.5rem;
@@ -8,7 +9,7 @@
 	width: 410px;
 	margin-right: 1rem;
 
-	&--list {
+	&__list {
 		display: flex;
 		flex: 0 0 30%;
 		justify-content: space-between;
@@ -117,26 +118,6 @@
 	position: absolute;
 	top: 0%;
 }
-.form {
-	background-color: var(--grey-light-1);
-	text-align: center;
-	padding: 20rem 0rem;
-	border-radius: 15px;
-}
-
-.input {
-	width: 100%;
-	&__name,
-	&__password {
-		width: 80%;
-		padding: 1.5rem 2rem;
-		border: 1px solid var(--grey-light-4);
-		outline: none;
-		font-size: 2rem;
-		font-family: inherit;
-		border-radius: 0.5rem;
-	}
-}
 
 .card {
 	// background-color: yellow;
@@ -166,5 +147,26 @@
 		font-size: 1.25rem;
 		font-weight: 700;
 		// color: var(--color-primary-dark);
+	}
+}
+
+//style for signin.html
+.form {
+	background-color: var(--grey-light-1);
+	text-align: center;
+	padding: 20rem 0rem;
+	border-radius: 15px;
+}
+.input {
+	width: 100%;
+	&__name,
+	&__password {
+		width: 80%;
+		padding: 1.5rem 2rem;
+		border: 1px solid var(--grey-light-4);
+		outline: none;
+		font-size: 2rem;
+		font-family: inherit;
+		border-radius: 0.5rem;
 	}
 }
