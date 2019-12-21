@@ -1,4 +1,4 @@
-.wrapper {
+.header-background {
 	max-height: 75vh;
 	// position: relastive;
 	// background-color: rgb(250, 240, 230);
@@ -17,7 +17,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	height: 6rem;
+	height: 7.5rem;
 	position: relative;
 	max-width: 120rem;
 	margin: 0 auto;
@@ -31,16 +31,18 @@
 	position: relative;
 }
 .heading-container {
-	min-height: 68.75vh;
+	min-height: 55vh;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
 
 .section-features {
-	max-height: 2rem;
+	height: 25vh;
 	display: flex;
 	justify-content: space-between;
-	// background-color: var(--grey-light-1);
+	margin-top: 10rem;
+
+	background-color: var(--color-features-bg);
 	// flex: 0 0 100%;
 }

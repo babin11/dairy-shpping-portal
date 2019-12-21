@@ -7,6 +7,7 @@
   --color-secondary-light: #cbf0ff;
   --color-secondary-mid: #b0e9ff;
   --color-secondary-dark: #94e1fd;
+  --color-features-bg: #f6fcfe;
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
@@ -57,7 +58,7 @@ body {
 }
 
 .nav {
-  width: 410px;
+  width: 510px;
   margin-right: 1rem;
 }
 
@@ -66,7 +67,7 @@ body {
   flex: 0 0 30%;
   justify-content: space-between;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   transition: all 0.25s ease;
 }
 
@@ -136,7 +137,7 @@ body {
 }
 
 .heading__primary--sub {
-  font-size: 1.35rem;
+  font-size: 1.45rem;
 }
 
 .btn-main {
@@ -178,26 +179,35 @@ body {
 
 .card {
   text-align: center;
-  height: 15rem;
+  height: 100%;
+  padding: 1rem 0rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 0 1 20%;
-  margin-top: 5rem;
 }
 
 .card__icon {
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
   display: flex;
   fill: var(--color-primary-dark);
 }
 
 .card__caption {
-  margin-top: 2rem;
-  font-size: 1.25rem;
+  letter-spacing: 0;
+  margin-left: 1.5rem;
+}
+
+.card__caption--big {
+  font-size: 2rem;
   font-weight: 700;
+}
+
+.card__caption--small {
+  color: var(--grey-dark-2);
+  font-size: 1.25rem;
+  text-align: justify;
 }
 
 .form {
@@ -221,7 +231,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.wrapper {
+.header-background {
   max-height: 75vh;
   background-image: linear-gradient(to bottom right, var(--color-secondary-mid), var(--color-secondary-light), var(--color-secondary-mid), var(--color-secondary-light), var(--color-secondary-dark));
 }
@@ -230,7 +240,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
+  height: 7.5rem;
   position: relative;
   max-width: 120rem;
   margin: 0 auto;
@@ -244,14 +254,16 @@ body {
 }
 
 .heading-container {
-  min-height: 68.75vh;
+  min-height: 55vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .section-features {
-  max-height: 2rem;
+  height: 25vh;
   display: flex;
   justify-content: space-between;
+  margin-top: 10rem;
+  background-color: var(--color-features-bg);
 }
